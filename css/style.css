@@ -1,0 +1,116 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+/* arti tanda bintang all selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline = berguna untuk memberi style utk button/ form*/
+  outline: none;
+  border: none;
+  /* text-decoration = agar tidak ada garis bawah saat buat link */
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar Start */
+.navbar {
+  display: flex;
+  /* sejajar secara horizontal */
+  justify-content: space-between;
+  /* sejajar secara vertikal */
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c20;
+  /* tetap pada posisi saat di scrol  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* navbar yg selalu diatas */
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+/* shudo element start */
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* shudo element end */
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Navbar End */
+
+/* Media Queries */
+/* Laptop */
+@media(max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media(max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* Mobile Phone */
+@media(max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

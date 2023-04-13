@@ -1,0 +1,25 @@
+web pu
+kedai kopi / warkop 
+
+start 14-04-2023
+telah sampai menit 36.10
+finish 
+
+
+
+
+
+
+
+
+
+#tool yg digunakan
+https://fonts.google.com/
+poppin
+
+https://feathericons.com/
+
+
+
+bembuat alias
+alias graph="git log --all --decorate --oneline --graph"
