@@ -2,8 +2,7 @@ web pu
 kedai kopi / warkop 
 
 start 14-04-2023
-telah sampai menit 1.29.18
-finish 
+finish 30-04-2023 
 
 
 
