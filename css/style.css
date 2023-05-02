@@ -95,6 +95,45 @@ body {
   display: none;
 }
 
+/* Navbar search form start */
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scale(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--bg);
+}
+
+/* Navbar search form end*/
+
+/* Navbar end */
+
+
 /* Hero section */
 .hero {
   min-height: 100vh;
@@ -140,6 +179,7 @@ body {
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   /* color: white; */
   mix-blend-mode: difference;
+  /* outline: red; */
 }
 
 .hero .content .cta {
@@ -384,6 +424,15 @@ footer .credit a {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
+
+  /* Navbar search form start*/
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+
+  /* Navbar search form end*/
+
 
   .about .row {
     flex-wrap: wrap;
