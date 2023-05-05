@@ -4,7 +4,7 @@ kedai kopi / warkop
 start 14-04-2023
 finish 30-04-2023 
 bagian 2
-telah sampai 39.25
+telah sampai 1.03.00
 
 jika hosting mesti dilanjutkan video1
 2.02.53
