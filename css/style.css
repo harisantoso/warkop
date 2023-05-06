@@ -416,8 +416,80 @@ body {
   font-size: 1rem;
 }
 
-/* Products Section end */
+/* Modal Box star */
+/* Item Detail  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
+.modal-container {
+  position: relative;
+  background-color: #fefefe;
+  color: var(--bg);
+  margin: 15% auto;
+  padding: 1.2rem;
+  border: 1px solid #666;
+  width: 80%;
+  animation: animateModal 0.5s;
+}
+
+/* Modal Animation start */
+@keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Modal Animation end */
+
+.modal-container .close-icon {
+  position: absolute;
+  right: 1rem;
+}
+
+.modal-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.modal-content img {
+  height: 20rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.modal-content a {
+  display: flex;
+  gap: 1rem;
+  width: 12rem;
+  background-color: var(--primary);
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1rem 1.6rem;
+}
+
+/* Modal Box end */
+/* Products Section end */
 
 /* Contact Section start  */
 .contact .row {
@@ -604,6 +676,13 @@ footer .credit a {
   .contact .row form {
     padding-top: 0;
   }
+
+  /* Modal Box Item Detail star */
+  .modal-content {
+    flex-wrap: wrap;
+  }
+
+  /* Modal Box Item Detail end */
 }
 
 /* Mobile Phone */

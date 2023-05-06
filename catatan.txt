@@ -1,10 +1,12 @@
 web pu
 kedai kopi / warkop 
 
+bagian 1
 start 14-04-2023
 finish 30-04-2023 
+
 bagian 2
-telah sampai 1.03.00
+finish 06-05-2023 
 
 jika hosting mesti dilanjutkan video1
 2.02.53
